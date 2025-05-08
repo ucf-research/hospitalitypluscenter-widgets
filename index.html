@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Triadic Color Emotion Widget</title>
+  <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.0/chroma.min.js"></script>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    #logo {
+      max-width: 300px;
+      margin-bottom: 20px;
+    }
+
+    #colorPicker {
+      margin: 20px 0;
+    }
+
+    .swatch {
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+      border-radius: 5px;
+      display: inline-block;
+    }
+
+    #emotionText {
+      font-size: 1.2em;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <img id="logo" src="logo.png" alt="Color Journey Logo" />
+
+  <h1>🎨 Triadic Color Emotion Widget</h1>
+  <p>Pick a base color and discover its triadic color group and emotional feel.</p>
+
+  <div id="colorPicker"></div>
+
+  <div id="harmonies"></div>
+
+  <h3>💡 Emotional Meaning:</h3>
+  <p id="emotionText">Choose a color to begin your triadic journey.</p>
+
+  <script src="triadic-to-emotion.js"></script>
+</body>
+</html>
